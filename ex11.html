@@ -1,0 +1,43 @@
+<script>
+
+	
+		var anoAd,num,anoNa,anoAtual,idd
+				
+	     
+		num=prompt ("Numero do Empregado: ");
+		//leia (num)
+		anoNa = parseInt(prompt ("Ano de nascimento: "));
+		//leia (anoNa)
+		anoAd = parseInt(prompt ("Ano de Admissão: "));
+		//leia (anoAd)
+		
+		anoAtual=2020
+		idd = (anoAtual - anoNa)
+          anoAd = (anoAtual - anoAd)
+          
+          
+		if (idd >= 65)
+		{
+			alert (" Requerer Aposentadoria");
+			}
+         else
+          {
+          	alert (" Idade insuficiente");
+		if (anoAd >=30)
+		   {
+			alert (" Requerer Aposentadoria");
+			}
+			else 
+			{ 
+				alert (" Não possui o tempo minimo");
+				if (idd >=60 & anoAd >= 25)			
+			{
+				alert (" Requerer Aposentadoria");
+				
+				}
+          }
+		
+	}
+
+
+</script>

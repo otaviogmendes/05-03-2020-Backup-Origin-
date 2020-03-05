@@ -1,0 +1,57 @@
+<script>
+    // normalmente "cont" é descrito como "i"
+    /*
+var a=[], b=[], c=[];
+for (var i=0; i<5; i++)
+{
+    a[i]=parseInt( prompt ("Informe o numero: "));
+    document.write(a[i]+" ");
+        
+    
+    
+}
+for (var i=0; i<5; i++)
+{
+    b[i]=a[i]*2
+  
+    document.write(b[i]+" ");
+    
+    
+    
+}
+for (var i=0; i<5; i++)
+{
+    c[i]=a[i]+b[i]
+  
+    document.write(c[i]+" ");
+    
+    
+}
+*/
+
+
+var numeros = [];
+var i=0
+
+
+while (i<=4) // ou (i<5)
+{
+    numeros[i] = prompt ("Digite");
+    
+    document.write(numeros[i]+" ");
+
+    i++;
+}
+
+// Imprimindo em ordem inversa
+
+ i=4;
+ document.write(numeros[i]+" - ");
+while (i>=0)
+{
+    document.write(numeros[i]+" ");
+    i--;
+}
+
+
+</script>

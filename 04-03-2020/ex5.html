@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objeto Carro</title>
+    <p>
+        
+        <!-- Criar um objeto chamado: Carro com os seguintes atributos:
+            marca
+            ano de fabricação
+            velocidade máxima
+            velocidade atual (inicializar com 0)
+            
+            
+            Criar o método acelerar()
+            Este método irá verificar se a velocidade atual é menor que a velocidade máxima. Cada vez que ele for executado a velocidade atual será acrescida de 1.
+            
+            
+            Criar o método desacelerar()
+            Cada vez que ele for executado a velocidade atual será decrescida de 1. Não deixar a velocidade atual negativa.
+            
+            Criar instâncias e testar os métodos. -->
+            
+            
+        </p>
+    </head>
+    
+    <body>
+        <script>
+            try {
+            
+                
+                function Carro(_marca, _anoF, _velMax, _velAtual) {
+                    // atributos
+                    this.marca = _marca
+                    this.anoF = _anoF
+                    this.velMax = _velMax
+                    this.velAtual = (0||_velAtual)
+                    
+                    //fim dos atributos      
+                    
+                }
+                //fim do metodo construtor
+                //A propriedade Object.prototype representa o Object protótipo do objeto.
+                
+                Carro.prototype.acelerar = function () {
+                    
+                    if (this.velAtual < this.velMax) {
+                        
+                    this.velAtual++                       
+                        alert("Velocidade Atual: " + this.velAtual + " KM/H")
+                        
+                    }
+                    else {
+                        alert("Você já está na velocidade maxima permitida!")
+                    }
+                    
+                } //fecha acelerar
+                
+                
+                Carro.prototype.desacelerar = function () {
+                    
+                    if (this.velAtual<1) {
+                        
+                                              
+                        alert("O carro ja está parado!")
+                                               
+                        
+                    }
+                    else {
+                        this.velAtual--
+                        alert("Você já está reduzindo a velocidade: " +this.velAtual+ " KM/H")
+                    }
+                    
+                } //fecha desacelerar
+                
+                carro1 = new Carro("Fusca", "1994", 10,"") //instanciar = copia do objeto              
+                
+                carro1.acelerar()
+                carro1.acelerar()
+                carro1.acelerar()
+                carro1.acelerar()
+                carro1.acelerar()
+                carro1.acelerar()
+                carro1.desacelerar()
+                carro1.desacelerar()
+                carro1.desacelerar()
+                carro1.desacelerar()
+                carro1.desacelerar()
+                carro1.desacelerar()
+
+            } //fecha try
+            catch (error) {
+                alert("Erro" + error)
+            }
+            
+        </script>
+    </body>
+    
+    </html>

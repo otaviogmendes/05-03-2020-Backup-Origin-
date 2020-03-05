@@ -1,0 +1,38 @@
+<script>
+
+    	// real = usado para numero decimal (com virgula)
+		var num1,num2,num3,media,nome;
+		//Math.media=media;
+		//Entrada
+		nome=prompt("Digite o Nome do Aluno : 🚺🚹 ");
+		//leia(nome)
+        //parsefloat (converte para casa decimal com virgula)
+		num1=parseFloat(prompt ("Digite a 1ª Nota: "));
+		//leia (num1)
+		num2=parseFloat(prompt ("Digite a 2ª Nota: "));
+		//leia (num2)
+		num3=parseFloat(prompt ("Digite a 3ª Nota: "));
+		//leia(num3)
+		//Processamento
+        //media = matchMedia;
+        //manter a casa decimal
+        
+		media = (num1+num2+num3)/3;
+		media=media.toFixed(1);
+
+		alert ("A media do aluno "+nome+" é : "+media);
+		
+		if (media>=7)
+		{
+            //aler exibe mensagem na tela
+            // console.log exibe no console
+			alert (" O aluno "+nome+" foi: Aprovado ♪  (ノ ͡❛ ͜ʖ ͡❛)ノ ♫");
+			}
+			else
+			{
+				alert ( " O aluno "+nome+" foi: Reprovado ↓ ( ˘︹˘ ) ↓ ");
+			}
+			
+			
+		//Saida
+</script>

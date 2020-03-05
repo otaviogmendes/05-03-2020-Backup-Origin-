@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    
+    <input type="text" id="nome">
+    <input type="button" value="Clique aqui" id="botao">
+
+    <script>
+         try {
+
+
+       
+        //function() sem nome = função anônima  
+        //variavel global 
+        // ouvinte é um metodo que conversa com o usuario
+        /* Cada evento disponivel possui um manipulador de eventos (event handler),
+         que é um bloco de código (geralmente uma função JavaScript definida pelo usuário)
+          que será executado quando o evento for disparado. Quando esse bloco de código é 
+          definido para rodar em resposta a um evento que foi disparado, nós dizemos que estamos 
+          registrando um manipulador de eventos. Note que manipuladores de eventos são, em alguns
+           casos, chamados de ouvinte de eventos (event listeners) — eles são praticamente intercambiáveis
+            para nossos propósitos, embora estritamente falando, eles trabalhem juntos. Os ouvintes escutam
+             o evento acontecendo, e o manipulador é o codigo que roda em resposta a este acontecimento.*/
+        var nome
+
+        document.getElementById('botao').addEventListener('click', function () {
+            nome = document.getElementById('nome').value
+            alert(nome)
+        }
+        )
+
+        //comando que marca UM BREAK POINT no console 
+        debugger
+
+        document.getElementById('botao').addEventListener('mouseover', function () {
+            document.getElementById('nome').style.color = "red"
+
+        })
+        document.getElementById('botao').addEventListener('mouseout', function () {
+            document.getElementById('nome').style.color = "blue"
+
+        })
+         }
+        catch (error) {
+        alert("erroooooo"+erro)
+        }
+    </script>
+</body>
+
+</html>
